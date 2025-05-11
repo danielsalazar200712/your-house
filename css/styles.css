@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf5f5;
+    text-align: center;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#modoBoton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #080808;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fbf7f7;
+}
+
+header {
+    background-color: #2f2a2a;
+    color: white;
+    padding: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: rgb(248, 246, 246);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #133f36;
+    color: white;
+    padding: 1rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(35, 167, 203);
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: rgb(98, 107, 205);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card {
+    border: 2px solid #335fd8; /* Bordes azules */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #12756d; /* Color de fondo al pasar el mouse */
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f8d210;
+}
+/* Estilos generales */
+.modo-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.modo-btn:hover {
+    transform: scale(1.2);
+}
+
+.dark-mode {
+    background-color: #121212; /* Fondo oscuro */
+    color: white; /* Color de texto */
+}
+
+/* Ajustar los estilos de las tarjetas y otros elementos */
+.dark-mode .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: white;
+}
