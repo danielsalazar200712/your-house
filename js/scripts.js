@@ -1,6 +1,4 @@
-function toggleMenu() {
-    document.body.classList.toggle("dark-mode"); // Corrección: `toggle` en lugar de `togggle`
-}
+
 
 const container = document.getElementById("product-container");
 const whatsappNumber = "573017116153"; // Reemplaza con el número real (con código de país)
@@ -29,28 +27,13 @@ products.forEach(product => {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.description}</p>
                 <p class="text-primary fw-bold">$${product.price}</p>
-                <a href="https://wa.me/${whatsappNumber}?text=Hola,%20quiero%20comprar%20${encodeURIComponent(product.name)}%20por%20$${product.price}" class="btn btn-success" target="_blank">Comprar</a>
+                <a href="https://wa.me/${whatsappNumber}?text=Hola,%20quiero%20comprar%20${encodeURIComponent(product.name)}%20por%20$${product.price}" class="btn btn-success" target="_blank">negociar</a>
             </div>
         </div>
     `;
 
     container.appendChild(productElement);
 });
-document.getElementById("modoBoton").addEventListener("click", function() {
+document.getElementById("dark-mode-toggle").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
-
-    // Guardar la preferencia del usuario en localStorage
-    const isDarkMode = document.body.classList.contains("dark-mode");
-    localStorage.setItem("darkMode", isDarkMode);
-
-    // Cambiar icono según el modo
-    this.textContent = isDarkMode ? "🌙" : "☀️";
-});
-
-// Cargar la preferencia guardada cuando la página se recarga
-document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("darkMode") === "true") {
-        document.body.classList.add("dark-mode");
-        document.getElementById("modoBoton").textContent = "☀️";
-    }
 });
